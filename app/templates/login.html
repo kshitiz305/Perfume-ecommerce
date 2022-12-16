@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<br><br>
+<div class = "jumbotron">
+<form method="POST">
+    <br>
+    <div align="center">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    <h2>Log in to your Wicked Lab account!</h2><br><br><br>
+    <h5>{{form.email.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{form.email()}}</h5><br><br>
+    <h5>{{form.password.label}}&nbsp;&nbsp;&nbsp;&nbsp;{{form.password()}}</h5><br><br>
+    <h5><div align="center">{{ form.submit() }}</div></h5>
+    </div>
+</form>
+</div>
+{% endblock %}

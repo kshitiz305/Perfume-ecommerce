@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<div class = "jumbotron">
+<form method="POST" onsubmit="Validations()">
+    <div align ="center">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{form.hidden_tag()}}
+    <h2>Create your new Wicked Lab account!</h2><br><br><br>
+    <h5>{{form.email.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{form.email()}}</h5><br><br>
+    <h5>{{form.username.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{form.username()}}</h5><br><br>
+    <h5>{{form.password.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{form.password()}}</h5><br><br>
+    <h5>{{form.pass_confirm.label}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{form.pass_confirm()}}</h5><br><br><br>
+    <h5></h5><div align="center">{{form.submit()}}</h5></div>
+    </div>
+</form>
+</div>
+
+{% endblock %}

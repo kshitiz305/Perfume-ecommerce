@@ -1,0 +1,89 @@
+h3
+{
+    color:#b08d57;
+}
+
+h2
+{
+    color:#b08d57;
+}
+
+h5
+{
+    color:#b08d57;
+}
+
+h1
+{
+    color:#b08d57;
+}
+
+p
+{
+    color:#b08d57;
+}
+
+.jumbotron
+{
+    background-color: #3E424B;
+}
+
+body
+{
+    background-color: #181818;
+}
+
+.card-img-top
+{
+    width: 538px; 
+    height: 650px; 
+    object-fit: cover;
+}
+
+.logo
+{
+    width: 400px;
+    height: 321px;
+}
+
+.card
+{
+    background-color: #3E424B;
+}
+
+.btn btn-primary
+{
+    background-color: #b08d57;
+}
+
+.footer 
+{
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #181818;
+    color: #b08d57;
+    text-align: center;
+}
+
+.navbar navbar-dark bg-dark
+{
+    text-align: center;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #b08d57 !important;
+}
+
+.btn-primary:hover 
+{
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+}
+
+.card-link
+{
+    color: #b08d57;
+    font-weight: 900;
+    font-size: 20px;
+}
