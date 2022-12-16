@@ -17,3 +17,4 @@ login_manager.login_view = "users.login"
 admin = Admin(app, template_mode='bootstrap4')
 
 from app import views, models
+db.create_all()
